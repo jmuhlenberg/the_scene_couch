@@ -20,31 +20,54 @@
 
 *{
   box-sizing: border-box;
-  font: inherit;
+  // font: inherit;
 }
 
-html{
-  font-size: 18px;
+// html{
+//   font-size: 18px;
+// }
+
+// body{
+//   font-family: 'Shadows Into Light', sans-serif;
+// }
+
+
+h1, h2, h3, h4, h5, a{
+  font-family: 'Staatliches', sans-serif;
 }
 
-body{
-  font-family: 'Shadows Into Light', sans-serif; 
+a{
+  color: black;
 }
 
-main{
-  h1{
-    font-family: 'Staatliches', sans-serif;
+a, a:visited{
+  text-decoration: none;
+}
+
+a:visited{
+  color: grey;
+}
+
+
+a:hover{
+  text-decoration: underline;
+  color: red;
+}
+
+
+.users{
+  font-family: 'Shadows Into Light', sans-serif;
+
+  ul{
+    list-style: none;
   }
-  h2{
-    font-family: 'Staatliches', sans-serif;
+
+  li{
+    display: block;
+    width: 80%;
+    padding: 1em;
+    border: 1px solid grey;
+    font-size: 24px;
   }
-  h3{
-    font-family: 'Staatliches', sans-serif;
-  }
-  h4{
-    font-family: 'Staatliches', sans-serif;
-  }
-  h5{
-    font-family: 'Staatliches', sans-serif;
-  }
+
 }
