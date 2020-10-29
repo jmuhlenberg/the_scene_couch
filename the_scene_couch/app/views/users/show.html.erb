@@ -1,10 +1,5 @@
-<h1>
-  <%= @user.password_digest %>
-</h1>
-
-
-</hr>
-
-<% if @current_user %>
-  <h5>WElcome <%= @current_user.username %></h5>
-<%end%>
+<div class="content">
+  <% if @current_user %>
+    <h5>WElcome <%= @current_user.username %></h5>
+  <%end%>
+</div>

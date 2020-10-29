@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   #defining middleware here to run before the action
   #before any action takes place, :{do this action}, [{which methods}]
-  before_action :set_user, only: [:edit, :show, :update]
+  # before_action :set_user, only: [:edit, :show, :update]
   # same as: before_action :grab_user, except: [:index, :new, :create, :destroy]
   before_action :set_current_user
 
@@ -36,7 +36,9 @@ class UsersController < ApplicationController
     end
   end
 
+
   private
+
   def user_params
     # cleans up the params when we need them
     params.require(:user).permit(:username, :password)

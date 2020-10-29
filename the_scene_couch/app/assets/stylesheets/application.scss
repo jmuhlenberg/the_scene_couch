@@ -18,22 +18,69 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-*{
-  box-sizing: border-box;
-  // font: inherit;
+@import "bulma";
+
+body{
+  background-color: black;
 }
 
-// html{
-//   font-size: 18px;
-// }
+.site-container{
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
 
-// body{
-//   font-family: 'Shadows Into Light', sans-serif;
-// }
+.banner{
+  background: url('emo_again.jpg');
+  background-size: 125% 65vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+}
 
+.content{
+  background-color: white;
+  height:65vh;
+  width: 100%;
+}
+
+.input-form{
+  width: 40%;
+  margin-left: 30%;
+  margin-right: auto;
+}
+
+.input, textarea{
+  margin-bottom: 3px;
+}
+
+.all-posts{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title{
+  font-family: 'Shadows Into Light', sans-serif;
+  text-align: center;
+  margin-left: auto;
+}
 
 h1, h2, h3, h4, h5, a{
   font-family: 'Staatliches', sans-serif;
+}
+
+h1{
+  margin-left: 10%;
+}
+
+h1[class='title']{
+  font-size: 48px;
 }
 
 a{

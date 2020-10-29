@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     # if the username matches, test the password
     if @user.authenticate(params[:user][:password])
       session[:current_user_id] = @user.id
-      redirect_to @user
+      redirect_to root_url
     else
       # examples of how to flash messages:
       # flash[:alert] = "Username or password was incorrect."
@@ -20,6 +20,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-
+    session[:current_user_id] = nil
+    redirect_to root_url, notice: "Logged Out"
   end
 end

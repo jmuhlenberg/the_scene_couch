@@ -1,6 +1,11 @@
-<form action='<%= users_path %>' method='post'>
-  <input type="hidden" name="authenticity_token" value='<%=form_authenticity_token%>'>
-  <input type="text" name="user[username]" placeholder='username'>
-  <input type="password" name="user[password]" placeholder='password'>
-  <input type="submit" value="SUBMIT">
-</form>
+<div class="content">
+  <h1>SIGN UP</h1>
+  <div class="input-form">
+    <form action='<%= users_path %>' method='post'>
+      <input type="hidden" name="authenticity_token" value='<%=form_authenticity_token%>'>
+      <input class='input' type="text" name="user[username]" placeholder='username'>
+      <input class='input' type="password" name="user[password]" placeholder='password'>
+      <input class='button' type="submit" value="SUBMIT">
+    </form>
+  </div>
+</div>
