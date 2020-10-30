@@ -21,10 +21,12 @@
           </div>
           <div class="navbar-end">
             <% if @current_user %>
-              <span>welcome <%=@current_user.username%>!
+            <div class="navbar-item">
+              <span class='user-welcome'>welcome <%=@current_user.username%>!  </span>
               <form action="<% session.clear %>">
-                <input type="submit" value="LOG OUT">
-              </form></span>
+                <input class='button' type="submit" value="LOG OUT">
+              </form>
+            </div>
             <% else %>
               <a class='navbar-item' href="/users/new">Sign Up</a>
               <a class='navbar-item' href="/session/new">Sign In</a>

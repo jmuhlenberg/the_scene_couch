@@ -1,7 +1,9 @@
 class PostsController < ApplicationController
-  # before_action :redirect_unless_logged_in, except: [:show, :index]
+  before_action :redirect_unless_logged_in, except: [:show, :index]
   # before_action :set_user, only: [:new, :edit, :show, :update]
+  # before_action :set_user
   before_action :set_current_user
+  before_action :current_user
 
   def new
     @post = Post.new
@@ -44,9 +46,9 @@ class PostsController < ApplicationController
     params.require(:post).permit(:title, :video, :content)
   end
 
-  # def set_user
-  #   @user = User.find(params[:id])
-  # end
+  def set_user
+    @user = User.find(params[:id])
+  end
 
   def set_current_user
     @current_user = current_user

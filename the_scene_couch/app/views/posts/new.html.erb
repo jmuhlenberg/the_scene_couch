@@ -3,9 +3,9 @@
   <div class="input-form">
     <form action="<%=posts_path%>" method="post">
       <input type="hidden" name="authenticity_token" value='<%=form_authenticity_token%>'>
-      <input class='input' type="text" name="title" placeholder='title'>
-      <input class='input' type="text" name="video" placeholder='video embedded url'>
-      <textarea class='textarea' type="textarea" name="content" rows="8" placeholder='review'></textarea>
+      <input class='input' type="text" name="post[title]" placeholder='title'>
+      <input class='input' type="text" name="post[video]" placeholder='video embedded url'>
+      <textarea class='textarea' type="textarea" name="post[content]" rows="8" placeholder='review'></textarea>
       <input class='button' type="submit" value="SUBMIT">
     </form>
   </div>

@@ -3,7 +3,9 @@ class UsersController < ApplicationController
   #before any action takes place, :{do this action}, [{which methods}]
   # before_action :set_user, only: [:edit, :show, :update]
   # same as: before_action :grab_user, except: [:index, :new, :create, :destroy]
+  # before_action :set_user
   before_action :set_current_user
+  before_action :current_user
 
   # index page action
   def index
