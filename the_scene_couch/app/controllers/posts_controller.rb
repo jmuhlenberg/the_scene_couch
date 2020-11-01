@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   before_action :redirect_unless_logged_in, except: [:show, :index]
   # before_action :set_user, only: [:new, :edit, :show, :update]
   # before_action :set_user
+  helper_method :current_user
   before_action :set_current_user
   before_action :current_user
 
